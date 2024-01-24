@@ -8,9 +8,13 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aframe-extras@7.2.0/dist/aframe-extras.min.js"></script>
 </head>
-<body>
+<body style="margin : 0px; overflow: hidden;">
     <!--x, y, z -->  
-    <a-scene arjs="detectionMode: mono_and_matrix; matrixCodeType: 4x4_BCH_13_5_5;">
+    <a-scene
+        vr-mode-ui="enabled: false;"
+        embedded
+        arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;
+        detectionMode: mono_and_matrix; matrixCodeType: 4x4_BCH_13_5_5;">
         <!--Assets-->
         <a-assets>
             <!-- Christian -->
@@ -35,6 +39,7 @@
         <!-- <a-sky color="#dfdfdf"></a-sky> -->
 
         <!-- Commit 40 celebratory comment -->
+        <a-entity camera></a-entity>
     </a-scene>
 </body>
 </html>
