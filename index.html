@@ -10,11 +10,12 @@
 </head>
 <body>
     <!--x, y, z -->
-    <a-scene embedded arjs="detectionMode: mono_and_matrix; matrixCodeType: 4x4_BCH_13_5_5;">
+    <a-scene vr-mode-ui="enabled: false" arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;
+    detectionMode: mono_and_matrix; matrixCodeType: 4x4_BCH_13_5_5;">
         <!--Assets-->
         <!--Shrek-->
         <a-assets>
-            <a-asset-item id="shrek" src="./assets/scene.bin"></a-asset-item>
+            <a-asset-item id="shrek" src="./assets/scene.gltf"></a-asset-item>
         </a-assets>
 
         <a-marker type="barcode" value="2">
