@@ -5,7 +5,7 @@
     <title>XRGroup 5</title>
     <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <!-- <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/aframe-extras@7.2.0/dist/aframe-extras.min.js"></script>
 </head>
 <body style="margin : 0px; overflow: hidden;">
@@ -21,21 +21,21 @@
             <a-asset-item id="peter" src="./assets/peter/scene.gltf"></a-asset-item>
         </a-assets>
 
-        <a-marker type="barcode" value="2">
+        <!-- <a-marker type="barcode" value="2"> -->
             <!-- Christian -->
-            <a-text value="Christian" position="-1.69 1 -3" rotation="90 0 0" scale="1 1 1" color="#000000"></a-text>
-            <a-entity gltf-model="#christian" position="-1.2 1.2 -3" rotation="-90 15 0"  scale="0.02 0.02 0.02" animation-mixer></a-entity>
+            <a-text value="Christian" position="-1.7 -0.2 -3" rotation="0 0 0" scale="1 1 1" color="#000000"></a-text>
+            <a-entity gltf-model="#christian" position="-1.2 0 -3" rotation="0 15 0"  scale="0.02 0.02 0.02"></a-entity>
             <!-- Elena -->
-            <a-text value="Elena" position="0.2 1 -3" rotation="90 0 0" scale="1 1 1" color="#000000"></a-text>
-            <a-entity gltf-model="#elena" position="0.5 1.2 -3" rotation="-90 0 0" scale="0.002 0.002 0.002" animation-mixer></a-entity>
+            <a-text value="Elena" position="0.2 -0.2 -3" rotation="0 0 0" scale="1 1 1" color="#000000"></a-text>
+            <a-entity gltf-model="#elena" position="0.5 0 -3" rotation="0 -10 0" scale="0.002 0.002 0.002" animation-mixer></a-entity>
             <!-- Peter -->
-            <a-text value="Peter" position="1.5 1 -3" rotation="90 0 0" scale="1 1 1" color="#000000"></a-text>
-            <a-entity gltf-model="#peter" position="1.69 1.2 -3" rotation="90 160 0" scale="60 60 60"></a-entity>
-        </a-marker>
+            <a-text value="Peter" position="1.5 -0.2 -3" rotation="0 0 0" color="#000000"></a-text>
+            <a-entity gltf-model="#peter" position="1.69 0 -3" rotation="0 160 0" scale="60 60 60"></a-entity>
+        <!-- </a-marker>s -->
         <!-- <a-sky color="#dfdfdf"></a-sky> -->
 
         <!-- Commit 40 celebratory comment -->
-        <a-entity camera></a-entity>
+        <a-camera position="0 0 0"></a-camera>
     </a-scene>
 </body>
 </html>
